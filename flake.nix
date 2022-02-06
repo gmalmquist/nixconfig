@@ -2,14 +2,16 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
     nixos-hardware.url = "github:NixOS/nixos-hardware";
-    home-manager.url = "github:nix-community/home-manager";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, nixos-hardware, home-manager }:
     {
       nixosConfigurations.malmblade = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = nixpkgs.lib.flatten [
           ./hardware-configuration.nix
           (with nixos-hardware.nixosModules; [

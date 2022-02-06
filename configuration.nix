@@ -89,12 +89,23 @@
   };
 
   environment.systemPackages = with pkgs; [
+    bitwarden
+    cargo
+    curl
+    discord
     firefox
+    gimp
+    git
+    inkscape
+    jetbrains.clion
+    jetbrains.idea-community
+    mpv
+    rustc
+    rustfmt
+    sshfs
+    tmux
     vim
     wget
-    curl
-    git
-    tmux
   ];
 
   programs.gnupg.agent = {
