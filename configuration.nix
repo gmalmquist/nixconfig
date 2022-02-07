@@ -92,6 +92,7 @@
     bitwarden
     cargo
     curl
+    direnv
     discord
     firefox
     gimp
