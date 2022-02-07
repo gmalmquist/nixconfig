@@ -108,7 +108,34 @@
     vim
     wget
     xclip
+    xdotool
   ];
+
+  home-manager = {
+    # use system nixpkgs instead of nixpkgs private to home-manager
+    useGlobalPkgs = true;
+    useUserPackages = true;
+
+    users.gwen = {
+      # all the configuration for your user goes in here! for example, you can
+      # add things to home.packages here to add them to your user packages:
+      # home.packages = with pkgs; [ ... ];
+
+      programs.bash = {
+        # enable bash, including allowing other things (like direnv) to hook into bash
+        enable = true;
+        # if you have a bashrc, your per-user bashrc config should go in the other options in here
+        # the home-manager documentation has many examples, i can link if you want
+      };
+
+      programs.direnv = {
+        # add direnv to PATH, and add hooks to any enabled shells
+        enable = true;
+        # enable nix plugin for direnv
+        nix-direnv.enable = true;
+      };
+    };
+  };
 
   programs.gnupg.agent = {
     enable = true;
