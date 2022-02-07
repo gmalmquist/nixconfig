@@ -26,6 +26,7 @@
   fileSystems."/media/hdd" =
     { device = "/dev/disk/by-uuid/5C8C8D8D8C8D61FE";
       fsType = "ntfs";
+      options = [ "uid=1000" "gid=100" "dmask=007" "fmask=117" ];
     };
 
   swapDevices =
