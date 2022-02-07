@@ -106,6 +106,7 @@
     tmux
     vim
     wget
+    xclip
   ];
 
   programs.gnupg.agent = {
