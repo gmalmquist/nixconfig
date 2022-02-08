@@ -89,20 +89,24 @@
   };
 
   environment.systemPackages = with pkgs; [
+    audacity
     bitwarden
     cargo
     curl
     direnv
     discord
+    ffmpeg
     firefox
     gimp
     git
     inkscape
     jetbrains.clion
     jetbrains.idea-community
+    kdenlive
     mpv
     rustc
     rustfmt
+    simplescreenrecorder
     sshfs
     tmux
     vim
