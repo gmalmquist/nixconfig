@@ -104,6 +104,7 @@
     jetbrains.idea-community
     kdenlive
     mpv
+    python3
     rustc
     rustfmt
     simplescreenrecorder
@@ -113,6 +114,7 @@
     wget
     xclip
     xdotool
+    xorg.xwininfo
   ];
 
   home-manager = {
