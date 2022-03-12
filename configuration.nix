@@ -104,6 +104,7 @@
     jetbrains.idea-community
     kdenlive
     mpv
+    openscad
     python3
     rustc
     rustfmt
