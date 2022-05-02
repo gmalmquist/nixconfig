@@ -111,6 +111,7 @@
     simplescreenrecorder
     sshfs
     tmux
+    unzip
     vim
     wget
     xclip
