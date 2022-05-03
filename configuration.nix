@@ -97,6 +97,7 @@
     discord
     ffmpeg
     firefox
+    gcc
     gimp
     git
     inkscape
