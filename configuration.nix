@@ -47,6 +47,7 @@
   time.timeZone = "America/New_York";
   location.provider = "geoclue2";
   services.localtime.enable = true;
+  services.tailscale.enable = true;
 
   i18n.defaultLocale = "en_US.UTF-8";
   console = {
