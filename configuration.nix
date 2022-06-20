@@ -154,6 +154,7 @@
   services = {
     openssh.enable = true;
     printing.enable = true;
+    fwupd.enable = true;
   };
 
   services.xserver = {
