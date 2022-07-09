@@ -114,6 +114,7 @@
     tmux
     unzip
     vim
+    vscode
     wget
     xclip
     xdotool
