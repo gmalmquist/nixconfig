@@ -100,6 +100,7 @@
     gcc
     gimp
     git
+    google-chrome
     inkscape
     jetbrains.clion
     jetbrains.idea-community
