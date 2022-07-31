@@ -48,6 +48,8 @@
   services.tailscale.enable = true;
   networking.firewall.checkReversePath = "loose";
 
+  services.xserver.wacom.enable = true;
+
   i18n.defaultLocale = "en_US.UTF-8";
   console = {
     font = "Lat2-Terminus16";
