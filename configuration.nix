@@ -118,6 +118,7 @@
     unzip
     vim
     vscode
+    wacomtablet
     wget
     xclip
     xdotool
