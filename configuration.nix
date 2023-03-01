@@ -108,6 +108,7 @@
     jetbrains.idea-community
     kdenlive
     mpv
+    nodePackages.typescript
     openscad
     python3
     rustc
