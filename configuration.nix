@@ -109,6 +109,7 @@
     kdenlive
     mpv
     nodePackages.typescript
+    obsidian
     openscad
     python3
     rustc
