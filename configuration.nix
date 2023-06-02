@@ -6,7 +6,7 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    cleanTmpDir = true;
+    tmp.cleanOnBoot = true;
   };
 
   networking = {
@@ -137,6 +137,8 @@
       # add things to home.packages here to add them to your user packages:
       # home.packages = with pkgs; [ ... ];
 
+      home.stateVersion = "22.11";
+
       programs.bash = {
         # enable bash, including allowing other things (like direnv) to hook into bash
         enable = true;
@@ -179,6 +181,6 @@
     # fonts here!
   ];
 
-  system.stateVersion = "22.05";
+  system.stateVersion = "22.11";
 }
 
