@@ -168,7 +168,7 @@
 
   services.xserver = {
     enable = true;
-    displayManager.lightdm.enable = true;
+    displayManager.sddm.enable = true;
     desktopManager.plasma5.enable = true;
     layout = "us";
     libinput = {
