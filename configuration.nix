@@ -119,8 +119,10 @@
     tmux
     unzip
     vim
+    vlc
     vscode
     wacomtablet
+    webcamoid
     wget
     xclip
     xdotool
